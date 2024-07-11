@@ -1,0 +1,30 @@
+Team ID = GG_3344
+Trained weights drive link = "https://drive.google.com/file/d/1wBCIJi5oLwioRkf5ndgS6qU6GR9bcc8d/view?usp=share_link"
+
+###############################################################################
+'''
+Please write the complete steps taken by your team explaining how you completed Task 2B. It is adviced to be as elaborate as possible.
+         Using Tensorflow and Keras
+1. When we started with the task we were having no knowledge about the Convolution Neural Networking and Image Classification.
+2. We started by trying to build the convolutional network with two convolution layers and two maxpooling layers.
+3. We used the softmax activation in the last dense layer and relu activation in the remaining layers with the SparseCategoricalCrossentropy and adam as loss function.
+4. During Training we got the accuracy as of 99% but while running it on the executable it was like very bad as 50%.
+5. We changed the hyperparameters for our function but nothing worked so we understood that our model is overfitted.
+
+Current Steps for the model Using Transfer Learing.
+1. We searched for more details and came onto the learning of Transfer Learing.
+2. Firstly we extracted the images with all the classes labeled with tthe help of keras.utils.image_dataset_from_directory in the size o 224,224.
+3. Then we scaled the images to be in range between 0 and 1  and loaded them as numpy iterator and took the array.
+4. We used the tensorflow_hub pretrained model By Google named as mobilenet_v2. This model us pretrained by google on 1.4million images dataset of ImageNet and have approximately 1000 plus classes.
+5. We used the feature extracter of this model to extract the features vector. Using this we were able to fetch all the pretrained weights and set them as fixed and they do not change during our own training .
+6. Now we add the last layer onto this keras layer with the softmax function and 5 outpt classes. This helped us to get all the pretraining done by the google and genralise our model.
+7. For the training of our last layer to extract the required 5 classes  we trained the model using the provided dataset and the numoyarray created above.
+8. We took the size of the image as 224x224x3 because the mobilenet pretrained model accept the same size as input.
+9. On training we achieved a accuracy of about 97% and while evaulating it on the test dataset it gave us about 98% accuracy.
+10.We saved the trained model as h5 file extension.
+11.Loading the model into the Task2b python file and predicting the image provided after preprocessing it.
+12.Converting the output to class using np.argmax and then getting the respective class from a dictionary and returning it.
+
+AFTER SUBMITTING THE CODE TO THE EVAULATOR WE ARE STILL UPTO APPLYING THE CONCEPT OF IMAGE AUGMENTATION TO INCREASE OUR TRAINING DATASET AND INCRESE THE RANDOMNESS IN IT .
+WE WILL BE TRYING TO IMPLEMENT THOSE CONCEPT ALSO TO GET OUR MODEL MORE ACCURATE AS IT IS NOT 100% ACCURATE ON THE UNSEEN IMAGES AND IT PREDICTED SOME OF THEM WRONG TOO.
+

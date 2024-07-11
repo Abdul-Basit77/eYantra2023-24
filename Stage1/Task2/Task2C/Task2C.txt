@@ -1,0 +1,15 @@
+Task 2C Event detection using deep learning.
+
+The aim of this task is to detect the war events caused by alien attack on the planet.
+
+Problem Statement:
+In previous task you classified the events using deep learning model. In this task these 
+class are present on the arena i.e the war events in the city where aliens have attacked.
+
+In this task, you have to detect those images and then classify the event.
+
+You can use any approach to detect and classify the events. Also the location of the event is 
+fixed in the arena. There are 5 locations where you will find any of 
+the 5 events : Fire, Destroyed buildings, Humanitarian Aid and rehabilitation, Military Vehicles and Combat.
+
+The event should be correctly identified at these locations.

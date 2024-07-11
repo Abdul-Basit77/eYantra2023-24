@@ -1,0 +1,26 @@
+Vanguard Robot Designing & Fabrication
+
+In this task, you will be building the Vanguard bot from scratch. And after completing the build, 
+a very simple task of moving the bot using wireless commands will have to be given. That's it! 
+That's all you need to do in this task. :P
+
+Vanguard Robot Building Rules
+1.Material: You are free to use the materials of your choice. It can be anything from wood, acrylic, 
+3D printing filament to aluminium, steel, titanium.😆
+Your bot should be able to move freely with the help of provided DC motors and must have a differential 
+drive only. An ArUco marker will be placed on top of the bot which will give it's position on the arena, 
+so make sure to leave enough space atop.
+
+2.Electronic Components: You are only allowed to use the electronic components provided with the 
+hardware kit. Use of any other component is prohibited.
+
+3.Dimensions: The dimensions of your bot should lie within the imaginary bounding box dimensions provided 
+below. You should strictly follow this rule and make sure your bot does not exceed the specified limit. 
+(Violation of this rule will result in disqualification of the team)
+Length(front to back):	    20 cm
+Width(left to right):	    16 cm
+Height:	                    Less than 30 cm (recommended)
+
+
+Task Video link:
+Youtube:    https://youtu.be/t6j1KoOlqu0

@@ -1,0 +1,49 @@
+Team id="GG_3344"
+Eyrc 2023-2024
+Editor -  Abhay Agrawal,
+          Abdul Basit,
+          Mohammad Kaif,
+          Shiwam Kumar
+Explanation of the task performed on this task of mini theme implementation.
+
+1. Executable Run- We run the provided executable to get the location of the events.
+
+
+2. Task_4a_Model_prediction python file.
+    2a. Image is preprocessed to transform the complete arena with respect to four corner aruco markers and cropping and checking the orientation. By using the
+        getPerspectiveTransform(),wrapPerspective() and flipped the entire arena to make the eyrc at the top.   
+    2a. To Detect the empty event location out of the five provided locations -- We counted the green pixel of certain intensity range 
+        and compared it with the total area of the event box and determined it empty if it is more than a certain limit.
+    2b. Prediction of the event images that are possibly not empty using the model used in task4A to classify the event images using the mobilenetV2 pretrained Model.
+    2c. Labeling them on the arena in live feed.
+    2d. Creating a csv file to save the event images with there labels and location in "Event_dict.csv" to further use it for path planning.
+
+
+3. Task_4B python file.
+    3a. Opening the live feed using image transformation .
+    3b. Fetching all the aruco markers on the arena and fetching there centroid location.
+    3c. Finding the nearest aruco to aruco marker 100 placed on the bot by calculating the distance between centroid of the other arucos and 100.
+    3d. Reading the latitude and longitude corresponding to the nearest aruco from lat_long.csv and storing its details to live_data.csv 
+        to be used by QGIS and connection_sender python file.
+    3e. Updating the QGIS project layer based on the live_data.csv.
+
+
+4. Connection_sender or GG_3344_task5a python file.
+    
+    4a. Dijikstra Algorithm - Used to calculate the shortest path. Graph is made is made constant and weights are fixed accordingly.
+    4b. Event details stored in "Event_dict.csv" is fetched and algorithm is made to calculate the shortest path for multiple nodes.
+    4c. Connection with esp32 is established and the whole path is then made to transfer to esp32 using socket.
+    4d. Bot asks the socket for the Run Command and once the user inputs the Run Command , Bot Starts moving and the timer starts.
+    4e. When all the nodes of the first and corresponding nodes are detected the bot starts asking the closest aruco if reached to server.
+    4f. Based on the live_data.csv the python checks whether the bot has reached nearest to the event location . If YES bot sends the positive command.
+    4g. Whenever the positive command is fetched the bot stops and beeps the buzzer for 1 sec signing the required event is reached. The
+    4h. Now the Path is reset to next path and node=0 and the next path traversal starts. If Uturn is need then automatically done.
+    4i. When all the path are successfully traversed bot return to starting position and connection with server is closed after 5 second buzzer.
+    4j. In this we have added the Multiple threads that is 2 threads for the parallel runn of the linefollowing and the COnnection reading file.
+    
+
+5. Line Following Algorithms
+    5a. For Detecting the black lines we used 5 ir sensors. 
+    5b. 3 IR sensors are used to detect the node and for the center line following with the correct usage of the PID and errors if corresponding IR sensors values are high.
+    5c. For side line detection we used to 2 ir sensors at the side of the bot at 10 cm apart So as to detect side lines as wall and remain within that black lines.
+    5d. 5c has to be followed since the distance between side line is not fixed on the arena and keeps changing on the different locations.

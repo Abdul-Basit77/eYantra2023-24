@@ -1,0 +1,22 @@
+Identification of Events Placed on the Arena
+
+The aim of this task is to identify the war events placed on the printed arena using the overhead camera.
+
+Problem Statement-
+In this task, the team is tasked with identifying the class and location of images positioned on 
+the printed arena utilizing the overhead camera. For testing your code, two sets of images, comprising 
+a total of 10 individual images, will be provided.
+
+The theme's arena simulates a war zone under alien attack, featuring various ongoing events that the 
+robot must visit. These events are categorized into five distinct classes, each assigned a specific 
+priority. The robot is required to visit each event location in strict adherence to the designated 
+priority order. The events and their corresponding priorities are as follows:
+1.Fire
+2.Destroyed Buildings
+3.Humanitarian Aid and rehabilitation
+4.Military Vehicles
+5.Combat
+
+
+Task Video link:
+Youtube:    https://youtu.be/C3LOU4hWR0M

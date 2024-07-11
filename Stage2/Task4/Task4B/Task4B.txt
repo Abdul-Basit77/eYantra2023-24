@@ -1,0 +1,23 @@
+Line Following And Geotracking
+
+The aim of this task is to execute line following on the arena utilizing the robot constructed 
+in Task 3C and geotracking its position in QGIS.
+
+
+Problem Statement
+In this task, the team has to make the robot traverse a specific path as shown in Figure 3. This 
+is the configuration for Task 4B.
+The designated starting point is the "Start Position" indicated in the arena. The timer will commence as 
+soon as the robot departs from the Start Position. The robot has to traverse the entire path outlined by the nodes 
+Start Point --> A --> B --> C --> D --> E --> F --> G --> H --> I --> A --> End Point and return to the endpoint, 
+which is same as the startpoint. The start of run and timer should also be indicated with a 1 second buzzer 
+beep along with switching "ON" the LED.
+Upon reaching each node, the robot is has to stop and activate the buzzer for a duration of 1 second to signal 
+that the robot has reached a specific node. When the robot reaches the endpoint after covering all the nodes, 
+it should stop and activate the Red LED and buzzer attached to the robot for 5 seconds.
+Illuminating the LED and making the buzzer beep will be considered as the completion of the task, prompting 
+the timer to be stopped.
+
+
+Task Video link:
+Youtube:    https://youtu.be/1dOpEyvDTow

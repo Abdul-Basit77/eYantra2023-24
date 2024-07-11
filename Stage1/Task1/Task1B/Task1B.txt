@@ -1,0 +1,4 @@
+Task 1B Geo referencing aerial image using QGIS
+
+The aim of this task is to understand GIS concepts and getting hands on QGIS software for 
+Geo spatial analysis. In this task you will be generating a georeferenced image using Georeferencer tool in QGIS.

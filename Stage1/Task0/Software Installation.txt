@@ -1,0 +1,12 @@
+Install following software/libraries on Windows OS:
+
+
+1.Miniconda for Python 3.9
+
+    https://repo.anaconda.com/miniconda/Miniconda3-py39_23.5.2-0-Windows-x86_64.exe
+
+2.Installing Python Packages
+    install packages in environment.yml file
+    
+3.Installation of QGIS Software
+    https://qgis.org/downloads/QGIS-OSGeo4W-3.32.2-1.msi

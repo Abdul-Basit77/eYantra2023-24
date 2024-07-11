@@ -1,0 +1,13 @@
+Team ID = GG_3344
+Trained weights drive link = "https://drive.google.com/file/d/1wBCIJi5oLwioRkf5ndgS6qU6GR9bcc8d/view?usp=share_link"    
+###############################################################################
+'''
+Please write the complete steps taken by your team explaining how you completed Task 2C. It is adviced to be as elaborate as possible.
+
+1. First of all we extracted the event images from the arena.
+2. To do so we used matplotlib library to plot the images and the find the approximate coordinate of each of the event.
+3. using opencv and the event starting coordinate we extracted the image cropped region from the arena.
+4. Now our main task is to predict the event image.
+5. We imported our pretrained model trained in task2B in the task_2c.py
+6. We predicted the event image using our model that was made using mobilenet and hence we resized our image to 224,224.
+7. We returned the extracted event name in the desired output.

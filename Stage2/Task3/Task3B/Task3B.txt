@@ -1,0 +1,22 @@
+Hardware Testing
+
+Welcome to Task 3B of our theme. Hopefully you already received the hardware kit, now it's time test major components of our kit.
+
+1. Setting up Arduino IDE
+To be able to program using Arduino IDE, follow the instructions:
+    1.Open Arduino IDE, go to File -> Preferences.  
+    2.Paste the following link in the Additional Board manager. Once done, click OK.
+    ( https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json )
+    3.Go to Tools -> Board -> Boards manager.
+    4.Search for ESP32 and press install button for the "ESP32 by Espressif Systems"
+    5.Once the installation is completed you can close the window.
+
+2. Testing ESP32 board, Buzzer & LED
+3. Testing Battery and Battery Charger
+4. Testing Motor Driver, Motors & IR sensors
+5. Camera feed & Camera cable Testing
+
+
+
+Task Video link:
+Youtube:    https://youtu.be/1GV0F-npUWw

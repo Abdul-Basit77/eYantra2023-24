@@ -1,0 +1,30 @@
+Task 2B Event Classification using deep learning.
+
+
+The aim of this task is to classify the war events caused by alient attack on the planet.
+
+Resources:
+1.https://blog.roboflow.com/object-detection-vs-image-classification-vs-keypoint-detection/
+
+2.Introduction to Convolutional Neural Network(CNN)
+    1. https://www.youtube.com/watch?v=NmLK_WQBxB4
+    2. https://www.youtube.com/watch?v=pj9-rr1wDhM
+
+3.Convolutional Neural Network using pytorch
+    1.https://www.learnpytorch.io/03_pytorch_computer_vision/
+    2.https://www.learnpytorch.io/04_pytorch_custom_datasets/
+    3.https://www.youtube.com/watch?v=pDdP0TFzsoQ
+
+4.Transfer learning
+    1.https://www.v7labs.com/blog/transfer-learning-guide
+    2.https://www.learnpytorch.io/06_pytorch_transfer_learning/
+    3.https://www.youtube.com/watch?v=K0lWSB2QoIQ
+
+
+
+Problem Statement:
+In this task you have to classify the images in to different class. These are the war events that 
+was caused due to alien attack on the planet.
+There are total 5 image classes
+
+dataset to train your model: https://drive.google.com/drive/folders/15ieQnTjMfSBx8o4B8VcN-tvJEU-XUnxB?usp=drive_link

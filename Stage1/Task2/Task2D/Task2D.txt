@@ -1,0 +1,36 @@
+Task 2D: Geolocating vanguard in QGIS
+
+You've probably ordered food through apps like Swiggy or Zomato, right? After placing 
+the order you can track the delivery guy's location in real-time on those apps. Well, 
+we're aiming to do something similar with our Vanguard robot in this task. The primary 
+objective of this task is to geolocate the Vanguard robot on a map within QGIS
+
+Steps to be followed:
+1.Open QGIS on your system.
+2.Press "Ctrl+N" to create a new project.
+3.Download the map provided.
+4.Refer to this video tutorial to open the map in QGIS.
+    https://www.youtube.com/watch?v=l5UQekQzemE
+5.After importing the map in QGIS, your QGIS workspace will look like this. You can zoom-in, zoom-out 
+and drag the map.
+6.Now you have to change the Coordinate reference system (CRS) in order to get the expected output. 
+In the bottom right corner you can see the current coordinate reference system authority ID as "EPSG:32618". 
+Click on that option, it will open "project properties" window. From there select coordinate reference system 
+which having authority ID "EPSG:4326" and then click on "Apply" then "Ok".
+7.When you hover over any perticuler region on the map, you can see the latitude and longitude of that location 
+in the "coordinate" section being displayed in the bottom. Also you can right click and copy the coordinates.
+8.Now create a csv file which should be named as "live_location.csv". (remember the file location we need this in below steps)
+9.Create two columns "lat" and "lon" and insert a location point "39.6136558" as lattitude and "-74.3610942" as longitude.
+10.Refer to "Visualize Live Air Traffic Data in QGIS" section here and follow the tutorial. 
+(As of now you have only one coordinate so it will display a single point in canvas as shown bellow)
+11.Download the csv file. It contains arena aruco id's along with the respective latitude, longitude of the streets.
+12.After downloading the above csv file place it in the same folder where you have created your 
+previous "live_location.csv" file.
+13.Now as all set, bring another cup of coffee ☕ because coding kicks in. Download the boiler plate code provided , 
+place it in the same folder where you have both the csv files, read the comments carefully and 
+complete "read_csv()", "write_csv()" and "tracker()" functions accordingly.
+
+
+
+Task Video link:
+Youtube:    https://youtu.be/eMrNtQBQVdE
