@@ -1,5 +1,5 @@
 # eYantra Robotics Competition 2023-24 - IIT Bombay
-Repository of eYantra theme `GeoGuide` (Team ID: GG_3344)
+Repository of eYantra theme GeoGuide (Team ID: GG_3344)
 
 Final Theme Run:  https://www.youtube.com/watch?v=HPgPgsss-B0
 
